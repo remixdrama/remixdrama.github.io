@@ -26,6 +26,22 @@
 	<!-- Fonts and Material Icons -->
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
  
+  <style>
+    .fade-in-image{
+      animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+  -o-animation: fadeIn 10s;
+  -ms-animation: fadeIn 10s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+   
+  </style>
+
 </head>
 <body class="slides chain simplifiedMobile animated">
 		
@@ -115,9 +131,10 @@
   <div class="content">
     <div class="container">
       <div class="wrap">      
-        <div class="fix-7-12">         
-          <img src="assets/img/remix2.jpg" class="ae-4 rounded" style="width:260px;height:300px;opacity: 90%;" >      
-
+        <div class="fix-7-12">    
+          <div class="fade-in-image">
+            <img src="assets/img/remix2.jpg" class="ae-4 rounded" style="width:260px;height:300px;" >      
+          </div>
           <h1 class="ae-1">Who am I?</h1>
           <p class="ae-2"><span class="opacity-8">Some people find it hard to find the right perfume. This may smell good when this is sprayed into the air but this changes when this reacts with the skin.</span></p>
         </div>  
